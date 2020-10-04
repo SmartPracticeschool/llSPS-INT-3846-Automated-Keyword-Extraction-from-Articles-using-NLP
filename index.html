@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+ 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.login{
+top: 20%;
+}
+</style>
+</head>
+
+<body>
+ <div class="login">
+	<h1>Keyword Extration using NLP</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/y_predict" method="post">
+    	<input type="text" name="demo" placeholder="keyword" required="required" />
+		   
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    
+    </form>
+    <br>
+   <br>
+
+   
+   
+
+ </div>
+
+
+</body>
+</html>
+
